@@ -1,34 +1,34 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Dumbbell, Users, Sparkles, Target } from "lucide-react";
+import { ArrowRight, Users, Target, Sparkles, Baby } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { cn } from "@/lib/utils";
 
 const services = [
   {
     icon: Sparkles,
-    title: "Ginástica Artística",
-    description: "Desenvolve força, flexibilidade e coordenação com técnicas profissionais de ginástica.",
+    title: "Ginástica Acrobática",
+    description: "Formação completa em acrobacia com elementos de força, flexibilidade e trabalho em equipa.",
     color: "from-primary to-accent",
     href: "/servicos",
   },
   {
-    icon: Dumbbell,
-    title: "Treino Personalizado",
-    description: "Programas personalizados adaptados aos teus objetivos e nível de condição física.",
+    icon: Baby,
+    title: "Iniciação (4-6 anos)",
+    description: "Desenvolvimento motor e primeiros contactos com a ginástica de forma lúdica e divertida.",
     color: "from-accent to-primary",
     href: "/servicos",
   },
   {
     icon: Users,
-    title: "Aulas de Grupo",
-    description: "Treina em comunidade com aulas dinâmicas e motivadoras para todos os níveis.",
+    title: "Competição",
+    description: "Treino avançado para atletas que pretendem competir a nível regional e nacional.",
     color: "from-primary to-accent",
     href: "/servicos",
   },
   {
     icon: Target,
-    title: "Treino Funcional",
-    description: "Melhora a tua performance diária com exercícios funcionais e práticos.",
+    title: "Formação de Base",
+    description: "Aprendizagem técnica fundamental para jovens ginastas dos 7 aos 12 anos.",
     color: "from-accent to-primary",
     href: "/servicos",
   },
@@ -40,15 +40,15 @@ export function ServicesSection() {
       <div className="section-container">
         <AnimatedSection className="text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-            Os Nossos Serviços
+            As Nossas Modalidades
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-            Treino Profissional para{" "}
-            <span className="text-primary">Todos os Níveis</span>
+            Ginástica Para{" "}
+            <span className="text-primary">Todas as Idades</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Oferecemos uma variedade de programas desenhados para te ajudar a atingir os teus objetivos, 
-            seja qual for o teu nível de experiência.
+            Programas de ginástica acrobática para crianças e jovens, desde a iniciação 
+            até ao nível de competição nacional.
           </p>
         </AnimatedSection>
 
