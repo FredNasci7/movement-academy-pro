@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: Baby,
-    title: "Iniciação (4-6 anos)",
+    title: "Iniciação (3-6 anos)",
     description: "O primeiro contacto com a ginástica de forma lúdica e divertida. Desenvolvemos as capacidades motoras básicas enquanto as crianças se divertem e ganham gosto pelo movimento.",
     features: [
       "Jogos e atividades lúdicas",
