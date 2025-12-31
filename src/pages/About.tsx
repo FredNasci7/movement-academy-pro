@@ -28,10 +28,10 @@ const values = [
 ];
 
 const stats = [
-  { value: "2008", label: "Ano de Fundação" },
-  { value: "500+", label: "Atletas Formados" },
-  { value: "50+", label: "Medalhas Conquistadas" },
-  { value: "15+", label: "Anos de Experiência" },
+  { value: "2021", label: "Ano de Fundação" },
+  { value: "200+", label: "Atletas Ativos" },
+  { value: "7", label: "Equipas" },
+  { value: "4+", label: "Anos de Experiência" },
 ];
 
 const About = () => {
@@ -49,9 +49,9 @@ const About = () => {
               <span className="text-primary">Movimento</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Desde 2008, a Movement Academy tem sido referência em ginástica artística, 
-              treino personalizado e desenvolvimento atlético. A nossa missão é transformar 
-              vidas através do movimento.
+              Desde 2021, a IMA - Intuitive Movement Academy tem sido referência em ginástica acrobática 
+              em Sintra. Nascida durante a pandemia com muito esforço e dedicação, a nossa missão é 
+              transformar vidas através do movimento.
             </p>
           </AnimatedSection>
         </div>
@@ -78,19 +78,20 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  A Movement Academy nasceu da paixão de um grupo de ex-atletas de ginástica 
-                  que sonhavam criar um espaço onde o movimento fosse celebrado em todas as 
-                  suas formas.
+                  A IMA - Intuitive Movement Academy nasceu em 2021, durante a pandemia, 
+                  graças ao esforço e dedicação da nossa fundadora Beatriz Pinto. Com uma 
+                  paixão inabalável pela ginástica acrobática, transformou um sonho em realidade.
                 </p>
                 <p>
-                  Começámos num pequeno ginásio com apenas 20 alunos. Hoje, somos uma das 
-                  academias de referência no país, com instalações modernas e uma equipa de 
-                  treinadores altamente qualificados.
+                  Começámos com um pequeno grupo de atletas e hoje contamos com mais de 200 
+                  atletas distribuídos por 7 equipas: BABY'MOVE, MINI'MOVE, MOVE'TEAM, MOVE'KIDS, 
+                  MINI'TEAM, MOVE'TEAM e MA'TEAM. A nossa academia tornou-se referência em 
+                  Sintra, Colares.
                 </p>
                 <p>
-                  O nosso compromisso vai além do treino físico. Acreditamos no desenvolvimento 
-                  integral de cada atleta, promovendo valores como disciplina, respeito e 
-                  superação pessoal.
+                  Trabalhamos com atletas dos 3 aos 18 anos, promovendo valores como disciplina, 
+                  respeito, trabalho em equipa e superação pessoal. O nosso compromisso vai 
+                  além do treino físico - acreditamos no desenvolvimento integral de cada atleta.
                 </p>
               </div>
               <Button asChild className="mt-8" size="lg">
