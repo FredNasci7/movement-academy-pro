@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Check, Sparkles, Dumbbell, Users, Target, Flame, StretchHorizontal } from "lucide-react";
+import { ArrowRight, Check, Sparkles, Users, Target, Baby, Trophy, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/animated-section";
@@ -8,86 +8,86 @@ import { cn } from "@/lib/utils";
 const services = [
   {
     icon: Sparkles,
-    title: "Ginástica Artística",
-    description: "Desenvolve força, flexibilidade, coordenação e elegância com o nosso programa completo de ginástica artística. Ideal para atletas de todas as idades e níveis.",
+    title: "Ginástica Acrobática",
+    description: "A ginástica acrobática combina força, flexibilidade, coordenação e trabalho de equipa. Os atletas trabalham em grupos de 2, 3 ou 4, realizando elementos de equilíbrio e dinâmicos que desafiam os limites do corpo humano.",
     features: [
-      "Treino técnico em aparelhos",
-      "Desenvolvimento de força e flexibilidade",
+      "Trabalho em pares, trios ou grupos",
+      "Elementos de equilíbrio e dinâmicos",
+      "Coreografia com música",
+      "Desenvolvimento de confiança e cooperação",
       "Preparação para competições",
-      "Acompanhamento individual",
-      "Turmas por nível e idade",
+    ],
+    image: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?q=80&w=600",
+    color: "from-primary to-accent",
+  },
+  {
+    icon: Baby,
+    title: "Iniciação (4-6 anos)",
+    description: "O primeiro contacto com a ginástica de forma lúdica e divertida. Desenvolvemos as capacidades motoras básicas enquanto as crianças se divertem e ganham gosto pelo movimento.",
+    features: [
+      "Jogos e atividades lúdicas",
+      "Desenvolvimento da coordenação",
+      "Primeiros elementos básicos",
+      "Socialização e trabalho em grupo",
+      "Aulas adaptadas à idade",
+    ],
+    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=600",
+    color: "from-accent to-primary",
+  },
+  {
+    icon: Target,
+    title: "Formação de Base (7-12 anos)",
+    description: "Aprendizagem técnica fundamental para jovens ginastas. Nesta fase desenvolvemos as bases sólidas que permitirão progressão para níveis mais avançados.",
+    features: [
+      "Técnica individual aprofundada",
+      "Introdução ao trabalho de grupo",
+      "Flexibilidade e força específica",
+      "Primeiras participações em eventos",
+      "Acompanhamento do desenvolvimento",
     ],
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600",
     color: "from-primary to-accent",
   },
   {
-    icon: Dumbbell,
-    title: "Treino Personalizado",
-    description: "Programas 100% personalizados, desenhados especificamente para os teus objetivos. Acompanhamento exclusivo com os nossos melhores treinadores.",
+    icon: Trophy,
+    title: "Competição",
+    description: "Treino avançado para atletas que pretendem competir a nível regional e nacional. Formamos equipas competitivas com acompanhamento especializado.",
     features: [
-      "Avaliação física completa",
-      "Plano de treino personalizado",
+      "Treinos intensivos (4-5x/semana)",
+      "Preparação física específica",
+      "Coreografias de competição",
+      "Participação em campeonatos",
       "Acompanhamento nutricional",
-      "Monitorização de progressos",
-      "Flexibilidade de horários",
     ],
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600",
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600",
     color: "from-accent to-primary",
   },
   {
     icon: Users,
-    title: "Aulas de Grupo",
-    description: "Treina em comunidade com as nossas aulas dinâmicas e motivadoras. A energia do grupo leva-te mais longe do que imaginavas.",
+    title: "TeamGym",
+    description: "Modalidade de ginástica em equipa que combina elementos de solo, mini-trampolim e tumbling. Ideal para quem gosta de trabalhar em grupo.",
     features: [
-      "Variedade de modalidades",
-      "Ambiente motivador",
-      "Turmas para todos os níveis",
-      "Música e energia contagiante",
-      "Resultados comprovados",
+      "Trabalho em equipa (6-16 atletas)",
+      "Três disciplinas: solo, trampolim, tumbling",
+      "Coreografias sincronizadas",
+      "Competições regionais e nacionais",
+      "Espírito de equipa e cooperação",
     ],
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600",
+    image: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=600",
     color: "from-primary to-accent",
   },
   {
-    icon: Target,
-    title: "Treino Funcional",
-    description: "Melhora a tua performance no dia-a-dia com exercícios que trabalham o corpo de forma integrada e funcional.",
+    icon: Star,
+    title: "Ginástica Recreativa",
+    description: "Para quem quer praticar ginástica de forma recreativa, sem compromisso competitivo. Foco no bem-estar, diversão e desenvolvimento pessoal.",
     features: [
-      "Movimentos naturais do corpo",
-      "Melhoria da postura",
-      "Prevenção de lesões",
-      "Aumento da mobilidade",
-      "Transferência para o quotidiano",
-    ],
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600",
-    color: "from-accent to-primary",
-  },
-  {
-    icon: StretchHorizontal,
-    title: "Flexibilidade & Mobilidade",
-    description: "Ganha amplitude de movimento e liberdade corporal com as nossas aulas especializadas em flexibilidade.",
-    features: [
-      "Alongamento progressivo",
-      "Técnicas de respiração",
-      "Prevenção de rigidez",
-      "Melhoria da postura",
-      "Relaxamento muscular",
+      "Sem pressão competitiva",
+      "Treinos flexíveis",
+      "Para todas as idades",
+      "Desenvolvimento físico geral",
+      "Ambiente descontraído",
     ],
     image: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=600",
-    color: "from-primary to-accent",
-  },
-  {
-    icon: Flame,
-    title: "HIIT & Cardio",
-    description: "Queima calorias e aumenta a tua resistência com treinos de alta intensidade que maximizam resultados.",
-    features: [
-      "Treinos intensos e eficazes",
-      "Queima calórica elevada",
-      "Melhoria cardiovascular",
-      "Aumento do metabolismo",
-      "Sessões de 45 minutos",
-    ],
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600",
     color: "from-accent to-primary",
   },
 ];
@@ -100,15 +100,15 @@ const Services = () => {
         <div className="section-container">
           <AnimatedSection className="text-center max-w-3xl mx-auto">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6">
-              Os Nossos Serviços
+              As Nossas Modalidades
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
-              Programas Para Cada{" "}
-              <span className="text-primary">Objetivo</span>
+              Ginástica Para Cada{" "}
+              <span className="text-primary">Idade e Nível</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Descobre a modalidade perfeita para ti. Oferecemos programas completos 
-              para todos os níveis, desde iniciantes até atletas de competição.
+              Oferecemos programas completos de ginástica acrobática para crianças e jovens, 
+              desde a iniciação até à competição nacional.
             </p>
           </AnimatedSection>
         </div>
@@ -153,7 +153,7 @@ const Services = () => {
 
                   <Button asChild size="lg">
                     <Link to="/contacto">
-                      Saber Mais
+                      Inscrever
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </Link>
                   </Button>
@@ -187,7 +187,7 @@ const Services = () => {
               Pronto Para Começar?
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Marca já a tua aula experimental gratuita e descobre qual o programa ideal para ti.
+              Marca já a aula experimental gratuita do teu filho/a e descobre o mundo da ginástica acrobática.
             </p>
             <Button asChild size="lg" variant="secondary" className="text-primary">
               <Link to="/contacto">

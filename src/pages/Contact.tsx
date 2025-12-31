@@ -30,7 +30,7 @@ const Contact = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
               Vamos <span className="text-primary">Conversar</span>
             </h1>
-            <p className="text-lg text-muted-foreground">Tens dúvidas? Queres marcar uma aula experimental? Entra em contacto connosco!</p>
+            <p className="text-lg text-muted-foreground">Tens dúvidas? Queres inscrever o teu filho/a? Entra em contacto connosco!</p>
           </AnimatedSection>
         </div>
       </section>
@@ -61,14 +61,14 @@ const Contact = () => {
                 <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50">
                   <h3 className="font-heading font-bold text-foreground mb-4">Informações de Contacto</h3>
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3"><MapPin className="w-5 h-5 text-primary mt-0.5" /><span className="text-muted-foreground">Rua do Movimento, 123<br/>4000-000 Porto, Portugal</span></div>
+                    <div className="flex items-start gap-3"><MapPin className="w-5 h-5 text-primary mt-0.5" /><span className="text-muted-foreground">Colares<br/>2705 Sintra, Portugal</span></div>
                     <div className="flex items-center gap-3"><Phone className="w-5 h-5 text-primary" /><a href="tel:+351912345678" className="text-muted-foreground hover:text-primary">+351 912 345 678</a></div>
                     <div className="flex items-center gap-3"><Mail className="w-5 h-5 text-primary" /><a href="mailto:info@movementacademy.pt" className="text-muted-foreground hover:text-primary">info@movementacademy.pt</a></div>
-                    <div className="flex items-start gap-3"><Clock className="w-5 h-5 text-primary mt-0.5" /><span className="text-muted-foreground">Seg - Sex: 07:00 - 22:00<br/>Sáb: 09:00 - 18:00</span></div>
+                    <div className="flex items-start gap-3"><Clock className="w-5 h-5 text-primary mt-0.5" /><span className="text-muted-foreground">Seg - Sex: 17:00 - 21:00<br/>Sáb: 09:00 - 13:00</span></div>
                   </div>
                 </div>
                 <div className="bg-muted rounded-2xl h-64 flex items-center justify-center">
-                  <span className="text-muted-foreground">Mapa - Google Maps</span>
+                  <span className="text-muted-foreground">Mapa - Colares, Sintra</span>
                 </div>
               </div>
             </AnimatedSection>

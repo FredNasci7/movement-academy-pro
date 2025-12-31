@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Início" },
   { href: "/sobre", label: "Sobre" },
-  { href: "/servicos", label: "Serviços" },
+  { href: "/servicos", label: "Modalidades" },
   { href: "/equipa", label: "Equipa" },
   { href: "/galeria", label: "Galeria" },
   { href: "/precos", label: "Preços" },
@@ -36,40 +36,48 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-card/95 backdrop-blur-lg shadow-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-card/95 backdrop-blur-lg shadow-md py-2"
+          : "bg-transparent py-4"
       )}
     >
       <div className="section-container">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
+            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-sm">
               <span className="text-primary-foreground font-heading font-bold text-xl">M</span>
             </div>
-            <span className={cn(
-              "font-heading font-bold text-xl transition-colors",
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            )}>
-              Movement Academy
-            </span>
+            <div className="flex flex-col">
+              <span className={cn(
+                "font-heading font-bold text-lg leading-tight transition-colors",
+                isScrolled ? "text-foreground" : "text-primary-foreground"
+              )}>
+                Movement Academy
+              </span>
+              <span className={cn(
+                "text-xs font-medium transition-colors",
+                isScrolled ? "text-muted-foreground" : "text-primary-foreground/70"
+              )}>
+                Ginástica Acrobática
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
                 className={cn(
-                  "font-medium text-sm transition-colors hover:text-primary relative",
+                  "font-medium text-sm transition-colors hover:text-primary relative py-1",
                   location.pathname === link.href
                     ? "text-primary"
                     : isScrolled
                     ? "text-foreground/80"
                     : "text-primary-foreground/90",
                   location.pathname === link.href &&
-                    "after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full"
+                    "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full"
                 )}
               >
                 {link.label}
@@ -78,8 +86,8 @@ export function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button asChild size="lg" className="font-semibold shadow-md hover:shadow-lg transition-shadow">
+          <div className="hidden lg:block flex-shrink-0">
+            <Button asChild size="default" className="font-semibold shadow-md hover:shadow-lg transition-shadow px-5">
               <Link to="/contacto">Aula Experimental</Link>
             </Button>
           </div>

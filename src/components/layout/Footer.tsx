@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide
 
 const quickLinks = [
   { href: "/sobre", label: "Sobre Nós" },
-  { href: "/servicos", label: "Serviços" },
+  { href: "/servicos", label: "Modalidades" },
   { href: "/equipa", label: "Equipa" },
   { href: "/galeria", label: "Galeria" },
   { href: "/precos", label: "Preços" },
@@ -11,11 +11,10 @@ const quickLinks = [
 ];
 
 const services = [
-  "Ginástica Artística",
-  "Treino Personalizado",
-  "Aulas de Grupo",
-  "Treino Funcional",
-  "Flexibilidade",
+  "Ginástica Acrobática",
+  "Iniciação (4-6 anos)",
+  "Formação de Base",
+  "Competição",
 ];
 
 export function Footer() {
@@ -26,15 +25,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <span className="text-primary-foreground font-heading font-bold text-xl">M</span>
               </div>
-              <span className="font-heading font-bold text-xl">Movement Academy</span>
+              <div>
+                <span className="font-heading font-bold text-lg block">Movement Academy</span>
+                <span className="text-primary-foreground/70 text-xs">Ginástica Acrobática</span>
+              </div>
             </div>
             <p className="text-primary-foreground/70 leading-relaxed">
-              Academia especializada em movimento, ginástica artística e treino personalizado. 
-              Transformamos vidas através do movimento.
+              Clube de ginástica acrobática em Colares, Sintra. Formamos atletas de todas as idades 
+              com paixão pelo movimento e excelência desportiva.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -83,7 +85,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-6">Serviços</h3>
+            <h3 className="font-heading font-bold text-lg mb-6">Modalidades</h3>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
@@ -100,8 +102,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/70">
-                  Rua do Movimento, 123<br />
-                  4000-000 Porto, Portugal
+                  Colares<br />
+                  2705 Sintra, Portugal
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -119,8 +121,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/70">
-                  Seg - Sex: 07:00 - 22:00<br />
-                  Sáb: 09:00 - 18:00
+                  Seg - Sex: 17:00 - 21:00<br />
+                  Sáb: 09:00 - 13:00
                 </span>
               </li>
             </ul>
