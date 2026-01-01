@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from "lucide-react";
+import logoIma from "@/assets/logo-ima.png";
 
 const quickLinks = [
   { href: "/sobre", label: "Sobre Nós" },
@@ -26,8 +27,15 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-lg">IMA</span>
+              <div className="relative">
+                <img 
+                  src={logoIma} 
+                  alt="IMA - Intuitive Movement Academy" 
+                  className="h-14 w-auto drop-shadow-[0_4px_8px_rgba(0,0,0,0.4)] [filter:drop-shadow(0_2px_4px_rgba(0,0,0,0.3))_drop-shadow(2px_4px_6px_rgba(0,0,0,0.2))]"
+                  style={{
+                    transform: 'perspective(500px) rotateY(-2deg)',
+                  }}
+                />
               </div>
               <div>
                 <span className="font-heading font-bold text-lg block">Intuitive Movement Academy</span>
