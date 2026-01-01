@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import AulaExperimental from "./pages/AulaExperimental";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/galeria" element={<Gallery />} />
           <Route path="/precos" element={<Pricing />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/aula-experimental" element={<AulaExperimental />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

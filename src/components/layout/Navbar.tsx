@@ -100,7 +100,7 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block flex-shrink-0">
             <Button asChild size="default" className="font-semibold shadow-md hover:shadow-lg transition-shadow px-6 bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link to="/contacto">Aula Experimental</Link>
+              <Link to="/aula-experimental">Aula Experimental</Link>
             </Button>
           </div>
 
@@ -141,7 +141,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button asChild className="w-full mt-4" size="lg">
-              <Link to="/contacto">Aula Experimental</Link>
+              <Link to="/aula-experimental">Aula Experimental</Link>
             </Button>
           </div>
         </div>
