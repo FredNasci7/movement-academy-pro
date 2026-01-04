@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wrench, Mail, Instagram, Facebook } from "lucide-react";
+import { Wrench, Mail, Phone } from "lucide-react";
 import logoIma from "@/assets/logo-ima.png";
 
 const UnderConstruction = () => {
@@ -152,31 +152,19 @@ const UnderConstruction = () => {
           
           <a
             href="mailto:movementacademy.geral@gmail.com"
-            className="inline-flex items-center gap-3 text-lg text-white hover:text-gold transition-colors duration-300 mb-6"
+            className="inline-flex items-center gap-3 text-lg text-white hover:text-gold transition-colors duration-300"
           >
             <Mail className="w-6 h-6" />
             movementacademy.geral@gmail.com
           </a>
-
-          {/* Social links */}
-          <div className="flex justify-center gap-4 mt-6">
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-12 h-12 bg-white/10 hover:bg-gold/20 rounded-full flex items-center justify-center text-white hover:text-gold transition-all duration-300 border border-white/20"
-            >
-              <Instagram className="w-5 h-5" />
-            </motion.a>
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-12 h-12 bg-white/10 hover:bg-gold/20 rounded-full flex items-center justify-center text-white hover:text-gold transition-all duration-300 border border-white/20"
-            >
-              <Facebook className="w-5 h-5" />
-            </motion.a>
-          </div>
+          <br />
+          <a
+            href="tel:+351916799225"
+            className="inline-flex items-center gap-3 text-lg text-white hover:text-gold transition-colors duration-300"
+          >
+            <Phone className="w-6 h-6" />
+            916 799 225
+          </a>
         </motion.div>
 
         {/* Footer text */}
@@ -186,7 +174,7 @@ const UnderConstruction = () => {
           transition={{ duration: 0.6, delay: 1.5 }}
           className="text-white/50 text-sm mt-8"
         >
-          © 2025 IMA - Impulse Movement Academy
+          © 2025 IMA - Intuitive Movement Academy - Associação Desportiva
         </motion.p>
       </div>
     </div>
